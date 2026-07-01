@@ -1,0 +1,7 @@
+raw/
+normalized-holdings/
+*.csv
+
+# Keep editor and cache noise out.
+.vscode/
+__pycache__/
