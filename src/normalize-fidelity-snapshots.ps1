@@ -374,7 +374,7 @@ $summary = foreach ($group in $groupedFiles) {
 
     $normalizedOutputRows = @($normalizedRows | ForEach-Object { $_ })
     if ($AggregateSameSymbolRows) {
-        $normalizedOutputRows = @(Aggregate-SameSymbolRows -Rows $normalizedRows)
+        $normalizedOutputRows = @(Merge-SameSymbolRows -Rows $normalizedRows)
     }
 
     $seen = New-Object 'System.Collections.Generic.HashSet[string]'
